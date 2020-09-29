@@ -1,0 +1,419 @@
+{% load static %} 
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>ССГС</title>
+</head>
+<body>
+
+  <header>
+    <div class="container-fluid d-flex justify-content-center">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav font-weight-bold ">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                О СОЮЗЕ 
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="../">ГЛАВНАЯ</a>
+                <a class="dropdown-item" href="#">НАПРАВЛЕНИЯ РАБОТЫ</a>
+                <a class="dropdown-item" href="../documentsSro/">ДОКУМЕНТЫ СРО</a>
+                <a class="dropdown-item" href="../compensationFund/">КОМПЕНСАЦИОННЫЙ ФОНД</a>
+                <a class="dropdown-item" href="../ManagementBodies/">ОРГАНЫ УПРАВЛЕНИЯ СОЮЗА</a>
+                
+                
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                ЧЛЕНСТВО СРО
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="../intoSro/">УСЛОВИЯ ВСТУПЛЕНИЯ В СРО</a>
+                <a class="dropdown-item" href="#">ОБРАЗЦЫ ДОКУМЕНТОВ ДЛЯ ВСТУПЛЕНИЯ/ВЫХОДА ИЗ СРО</a>
+                <a class="dropdown-item" href="#">РЕЕСТР ЧЛЕНОВ</a>
+                <a class="dropdown-item" href="#">ИНФОРМАЦИЯ ПО ВЫПИСКАМ</a>
+                <a class="dropdown-item" href="#">ПЛАН ПРОВЕРОК</a>
+                <a class="dropdown-item" href="../termsStrah/">УСЛОВИЯ СТРАХОВАНИЯ</a>
+                
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="../vajnInfo/">ИНФОРМАЦИЯ ОБЯЗАТЕЛЬНАЯ ДЛЯ РАЗМЕЩЕНИЯ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="../legislation/">ЗАКОНОДАТЕЛЬСТВО</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="../indexTwo/">КОНТАКТЫ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="../registrySro/">РЕЕСТР СРО</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="under_head d-flex align-items-center">
+    <div class="container">
+      <div class="under_head_bg">
+        <div class="row d-flex p-0 m-0">
+          <div class="col-md-6 d-flex justify-content-center">
+            <div class="under_head_SRO d-flex align-items-center">
+              <h5>СРО-С-048-12102009</h5>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex justify-content-center">
+              <div class="under_head_new align-items-center">
+                  <p>НОВЫЕ ТРЕБОВАНИЯ К ЧЛЕНСТВУ</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="registrySro">
+    <div class="container">
+      <div class="row p-0 m-0">
+        <div class="col-md-12 d-flex justify-content-start">
+          <div class="contact_text">
+            <hr>
+            <h4 class="font-weight-bold">Реестр СРО</h4>
+            <hr>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+      <!-- <section class="compensationFund">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-10 p-0 m-0">
+                  <h5>Поиск членов реестра СРО</h5>
+                    <div class="compensationFund_start shadow mb-5 bg-white rounded pt-5 pb-5">
+                        <div class="compensationFund_blog d-flex justify-content-center flex-column p-3">
+                          <form  action="../registrySro/" method="POST">
+                            {% csrf_token %}
+                                   <input class="registrySro_blog_input " type="text" name="srh" placeholder="Введите ваш ИНН">
+                                   <button type="submit" class="btn btn-warning  w-15">Поиск</button>
+                          </form>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </div>
+      </section> -->
+      {% block content %}
+      <section class="compensationFund">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-10 p-0 m-0">
+                  <h5>Поиск действующих членов реестра СРО</h5>
+                    <div class="compensationFund_start shadow mb-5 bg-white rounded pt-5 pb-5">
+                        <div class="compensationFund_blog d-flex justify-content-center flex-column p-3">
+                          <form action="../registrySro/" method="POST">
+                            <div class="form-group">
+                              <!-- <label for="">Введите ваш ИНН</label> -->
+                              {% csrf_token %}
+                              <input type="search" class="registrySro_blog_input form-control" type="text" name="srh" placeholder="Введите ваш ИНН">
+                            </div>
+                            <button type="submit" class="btn btn-warning">ПОИСК</button>
+                          </form>
+                          
+                        
+                        </div>
+                        
+                    </div>
+                    <!-- <div>
+                              {% if messages %}
+                                <ul class="messages">
+                                  {% for k in messages %}
+                                  <li style="color: red">{{ k }}</li>
+                                  {% endfor %}
+                                    </ul>
+                                  {% endif %}
+                            </div> <br> -->
+                            {% if messages %}
+                            <div class="alert alert-danger messages" role="alert">
+                              {% for k in messages %}
+                              <h4>{{ k }}</h4>
+                              {% endfor %}
+                            </div>
+                            {% endif %}
+                </div>
+                
+            </div>
+      </div>
+      </section>
+      <section class="compensationFund">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-10 p-0 m-0">
+                {% if sr %}
+              {% for k in sr %}
+                    <div class="compensationFund_start shadow mb-5 bg-white rounded p">
+                        <div class="compensationFund_blog d-flex justify-content-center flex-column p-3">
+                          <table class="table table-bordered m-0">
+                            <thead>
+                              <tr>
+                                
+                                <th scope="col">ЮЛ/ИП</th>
+                                <th scope="col">Сокращенное наименование</th>
+                                <th scope="col">Статус члена</th>
+                                <th scope="col">ИНН</th>
+                                <th scope="col">Адрес</th>
+                                <th scope="col">Контактные телефоны</th>
+                                <th scope="col">E-mail
+                                </th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>{{k.urIp}}</td>
+                                <td>{{k.lessName}}</td>
+                                <td>{{k.statusChlena}}</td>
+                                <td>{{k.inn}}</td>
+                                <td>{{k.adressStrana}}</td>
+                                <td>{{k.telNumber}}</td>
+                                <td>{{k.email}}</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </div>
+       {% endfor %}
+            {% endif %}
+      </section>
+      <br>
+      <br>
+      <section class="compensationFund">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-10 p-0 m-0">
+                  <h5>Поиск организаций, прекративших своё членство в СРО</h5>
+                    <div class="compensationFund_start shadow mb-5 bg-white rounded pt-5 pb-5">
+                        <div class="compensationFund_blog d-flex justify-content-center flex-column p-3">
+                          <form action="../registrySro/" method="POST">
+                            <div class="form-group">
+                              <!-- <label for="">Введите ваш ИНН</label> -->
+                              {% csrf_token %}
+                              <input type="search" class="registrySro_blog_input form-control" type="text" name="srh" placeholder="Введите ваш ИНН">
+                            </div>
+                            <button type="submit" class="btn btn-warning">ПОИСК</button>
+                          </form>
+                          
+                        
+                        </div>
+                        
+                    </div>
+                    <!-- <div>
+                              {% if messages %}
+                                <ul class="messages">
+                                  {% for k in messages %}
+                                  <li style="color: red">{{ k }}</li>
+                                  {% endfor %}
+                                    </ul>
+                                  {% endif %}
+                            </div> <br> -->
+                            {% if messages %}
+                            <div class="alert alert-danger messages" role="alert">
+                              {% for k in messages %}
+                              <h4>{{ k }}</h4>
+                              {% endfor %}
+                            </div>
+                            {% endif %}
+                </div>
+                
+            </div>
+      </div>
+      </section>
+
+      
+    <!-- <section class="registrySro">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-10 p-0 m-0">
+                    <h5>Поиск членов реестра СРО</h5>
+                    <div class="compensationFund_start shadow mb-5 bg-white rounded pt-5 pb-5">
+                        <div class="compensationFund_blog d-flex justify-content-center flex-column p-3">
+                            <form  action="../registrySro/" method="POST">
+                            {% csrf_token %}
+                                   <input class="registrySro_blog_input " type="text" name="srh" placeholder="Введите ваш ИНН">
+                                   <button type="submit" class="btn btn-warning  w-15">Поиск</button>
+                            </form>
+                            <br>
+                            <br>
+                            <div>
+                              {% if messages %}
+                                <ul class="messages">
+                                  {% for k in messages %}
+                                  <li style="color: red">{{ k }}</li>
+                                  {% endfor %}
+                                    </ul>
+                                  {% endif %}
+                            </div> <br>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            <div class="row d-flex justify-content-center">
+              <div class="col-md-6">
+                {% if sr %}
+              {% for k in sr %}
+              <table border="1" width="100px" height="100%" cellpadding="5">
+              <tr>
+                <th>ЮЛ/ИП</th>
+                <th>Сокращенное наименование</th>
+                <th>Статус члена</th>
+                <th>ИНН</th>
+                <th>Адрес</th>
+                <th>Контактные телефоны</th>
+                <th>E-mail</th>
+              </tr>
+              <tr>
+                <td>{{k.urIp}}</td>
+                <td>{{k.lessName}}</td>
+                <td>{{k.statusChlena}}</td>
+                <td>{{k.inn}}</td>
+                <td>{{k.adressStrana}}</td>
+                <td>{{k.telNumber}}</td>
+                <td>{{k.email}}</td>
+              </tr>
+              </table>
+              <hr>
+              {% endfor %}
+            {% endif %}
+              </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="row d-flex justify-content-center">
+              <div class="col-md-9">
+                {% if sr %}
+              {% for k in sr %}
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col">ЮЛ/ИП</th>
+                    <th scope="col">Сокращенное наименование</th>
+                    <th scope="col">Статус члена</th>
+                    <th scope="col">ИНН</th>
+                    <th scope="col">Адрес</th>
+                    <th scope="col">Контактные телефоны</th>
+                    <th scope="col">E-mail</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>{{k.urIp}}</td>
+                    <td>{{k.lessName}}</td>
+                    <td>{{k.statusChlena}}</td>
+                    <td>{{k.inn}}</td>
+                    <td>{{k.adressStrana}}</td>
+                    <td>{{k.telNumber}}</td>
+                    <td>{{k.email}}</td>
+                    
+                  </tr>
+                </tbody>
+              </table>
+              <hr>
+              {% endfor %}
+            {% endif %}
+              </div>
+            </div>
+              </div>
+            </div>
+            
+          </div>
+      {% endblock %} 
+             <div class="row d-flex justify-content-center">
+                <div class="col-md-9 p-0 m-0">
+                    <h5>Поиск организаций, прекративших своё членство в СРО</h5>
+                    <div class="registrySro_start shadow mb-5 bg-white rounded pt-5 pb-5">
+                        <div class="registrySro_blog d-flex justify-content-center">
+                            <form class="form" name="test" method="post">
+                                <input class="registrySro_blog_input" type="text" placeholder="Введите ИНН, ОГРН, Название организации">
+                                <button type="button" class="btn btn-warning  w-15">Поиск</button>
+                         </form>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- <section>
+              
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                      Запустить модальное окно
+                    </button>
+
+                    
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Решения, принятые общим собранием членов саморегулируемой организации и постоянно действующим коллегиальным органом управления саморегулируемой организации;</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+                            <a href="../documentsSro/">Положение о страховании гражданской ответственности в случае причинения членами Союза вреда вследствие недостатков работ, которые оказывают влияние на безопасность объектов капитального строительства</a>
+                            <br>
+                            <button type="button" class="btn btn-warning">Предупреждение</button>
+                            <button type="button" class="btn btn-warning">Предупреждение</button>
+                            <button type="button" class="btn btn-warning">Предупреждение</button>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+            </section>
+             -->
+
+
+
+
+
+            <!-- <footer class="under_head d-flex align-items-center">
+              <div class="container">
+                <div class="under_head_bg">
+                  <div class="row d-flex p-0 m-0">
+                    <div class="col-md-6 d-flex justify-content-center">
+                      <div class="under_head_SRO d-flex align-items-center">
+                        <h5>СРО-И-037-18122012</h5>
+                      </div>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center">
+                        <div class="under_head_new align-items-center">
+                            <p>НОВЫЕ ТРЕБОВАНИЯ К ЧЛЕНСТВУ</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </footer> -->
+</body>
+</html>

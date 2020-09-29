@@ -1,0 +1,113 @@
+{% load static %} 
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>ССГС</title>
+</head>
+<body>
+
+  <header>
+    <div class="container-fluid d-flex justify-content-center">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav font-weight-bold ">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                О СОЮЗЕ 
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="../">ГЛАВНАЯ</a>
+                <a class="dropdown-item" href="#">НАПРАВЛЕНИЯ РАБОТЫ</a>
+                <a class="dropdown-item" href="#">ДОКУМЕНТЫ СРО</a>
+                <a class="dropdown-item" href="../compensationFund/">КОМПЕНСАЦИОННЫЙ ФОНД</a>
+                <a class="dropdown-item" href="../ManagementBodies/">ОРГАНЫ УПРАВЛЕНИЯ СОЮЗА</a>
+                
+                
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                ЧЛЕНСТВО СРО
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">УСЛОВИЯ ВСТУПЛЕНИЯ В СРО</a>
+                <a class="dropdown-item" href="#">ОБРАЗЦЫ ДОКУМЕНТОВ ДЛЯ ВСТУПЛЕНИЯ/ВЫХОДА ИЗ СРО</a>
+                <a class="dropdown-item" href="#">РЕЕСТР ЧЛЕНОВ</a>
+                <a class="dropdown-item" href="#">ИНФОРМАЦИЯ ПО ВЫПИСКАМ</a>
+                <a class="dropdown-item" href="#">ПЛАН ПРОВЕРОК</a>
+                <a class="dropdown-item" href="../termsStrah/">УСЛОВИЯ СТРАХОВАНИЯ</a>
+                
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="../vajnInfo/">ИНФОРМАЦИЯ ОБЯЗАТЕЛЬНАЯ ДЛЯ РАЗМЕЩЕНИЯ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="../legislation/">ЗАКОНОДАТЕЛЬСТВО</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="../indexTwo/">КОНТАКТЫ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="../registrySro/">РЕЕСТР СРО</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="under_head d-flex align-items-center">
+    <div class="container">
+      <div class="under_head_bg">
+        <div class="row d-flex p-0 m-0">
+          <div class="col-md-6 d-flex justify-content-center">
+            <div class="under_head_SRO d-flex align-items-center">
+              <h5>СРО-С-048-12102009</h5>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex justify-content-center">
+              <div class="under_head_new align-items-center">
+                  <p>НОВЫЕ ТРЕБОВАНИЯ К ЧЛЕНСТВУ</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="documents">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-9 p-0 m-0">
+                <div class="legislation_start shadow mb-5 bg-white rounded pt-5 pb-5">
+                    <div class="legislation_blog d-flex justify-content-center">
+                        <img src="{% static 'doc/svo1.jpg'%}" alt="">
+                    </div>
+                    <div class="legislation_blog d-flex justify-content-center pt-5">
+                        <img src="{% static 'doc/svo2.jpg'%}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+  </div>
+  </section>
+
+
+
+
+
+
+</body>
+</html>

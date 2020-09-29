@@ -1,0 +1,358 @@
+
+
+.sidebar-nav {
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+   
+    background-color: #eeeeee;
+}
+
+.site-header {
+    background-color: rgba(0, 0, 0, .85);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.site-header {
+    background-color: rgba(0, 0, 0, .85);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+
+.pb-1, .py-1 {
+    padding-bottom: .25rem!important;
+}
+
+.sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+
+.ar {
+    font-size: 30px;
+}
+
+.blog_one {
+    margin-bottom: 40px;
+}
+
+.blog {
+    background-image: url(../img/b2Org.jpg);
+    height: 662px;
+    padding: 0;
+}
+
+.blog_two_left {
+    border: 2px solid #d1d1d1;
+}
+
+.blog_two_right {
+    border: 2px solid #ff0000;
+}
+.blog_two_right h3 {
+    color: #ff0000;
+}
+
+.blogUp {
+    background-color: #a1a1a1;
+    opacity: 0.9;
+    height: 233px;
+}
+.blogUp_text {
+    margin-top: 45px;
+    margin-left: 80px;
+    font-size: 30px;
+}
+
+.blogUpTwo {
+    font-size: 30px;
+}
+
+
+/* .blog_two {
+    background-color: white; 
+    width: 970px;
+    height: 570px; 
+    margin-bottom: 30px;
+    margin-top: -105px;
+} */
+
+.blog_two_asost {
+    padding: 50px;
+    
+    margin-top: -105px;
+    background-color: white;
+}
+
+.blog_telephone-basic {
+    margin-bottom: 50px;
+}
+
+.blog_telephone {
+    height: 610px;
+    width: 450px;
+    background-color: white;
+    padding: 40px;
+}
+
+.tel {
+    margin-bottom: 100px;
+}
+
+
+.icon_telephone{
+    font-size: 80px;
+    color: #4287f5;
+    margin-right: 25px; 
+}
+
+.img_Reestr {
+    margin-top: 80px;
+}
+
+#exampleFormControlInput1 {
+    width: 330px;
+}
+
+.blog_telephone-basic-img {
+    margin-left: 52px;
+}
+
+.blog_telephone-basic_right_down h6{
+    margin-top: 80px;
+    margin-left: 75px;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 10px;
+    
+}
+
+.blog_telephone-basic_right_down p {
+    margin-left: 75px;
+    margin-bottom: 18px;
+}
+
+.blog_telephone-basic_right_down button {
+    margin-left: 250px;
+    margin-bottom: 10px;
+}
+
+
+.blog_telephone-basic_right_down_qval h5 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 115px;
+    font-weight: bold;
+}
+
+.blog_telephone-basic_right_down_qval button {
+    margin-left: 230px;
+    margin-top: 20px;
+}
+
+.blog_tree_vstup_vopr {
+    background-color: white;
+    height: 150px;
+    margin-bottom: 180px;
+}
+
+.blog_tree_vstup_text_text {
+    font-weight: bold;
+}
+
+.number {
+    display: flex;
+    height: 50px;
+    width: 130px;
+    background-color: blue;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-right: 20px;   
+}
+
+.number_text {
+    font-size: 12px;
+}
+
+.blog_tree_vstup_number_text {
+    font-size: 10px;
+}
+
+.number_btn {
+    margin-bottom: 8px;
+}
+
+.blog_four {
+    margin-bottom: 180px;
+}
+
+.blog_four_header{
+    height: 66px;
+    background-color: blue;
+    color: white;
+    padding: 0;
+}
+
+.blog_four_header h5 {
+    padding-left: 50px;
+    margin-right: 40px;
+    padding-top: 5px;
+}
+
+.blog_four_header p {
+    padding-top: 17px;
+}
+
+.blog_four_down {
+    height: 245px;
+    background-color: white;
+    padding: 50px;
+}
+
+.blog_four_down_text h4 {
+    font-weight: bold;
+}
+
+.blog_five {
+    margin-bottom: 180px;
+}
+
+.blog_five_icons {
+    background-color: #eeeeee;
+    height: 200px;
+    padding: 30px;
+    border: 2px solid #fff;
+}
+
+.blog_five_icons_icon {
+    width: 160px;
+    height: 130px;
+    text-align: center;
+}
+
+.blog_five_icons_icon p {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.under_head {
+    background-color: #4287f5;
+    background-image: url('../img/b2OrgDark.jpg');
+    height: 115px;
+    margin-bottom: 90px;
+}
+
+.under_head_bg {
+    color: white;
+}
+
+.under_head_new {
+    display:flex;
+    align-items: center;
+    padding: 5px;
+    border: solid;
+    margin-bottom: 5px;
+}
+
+.under_head_new p {
+    padding: 0;
+    margin: 0;
+}
+
+.under_head_btn {
+    color: white;
+}
+
+.under_head_btn :hover {
+    color: #4287f5;
+}
+
+.contact_map {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+
+.contact_text {
+    margin-bottom: 40px;
+}
+
+.contact_text hr {
+    background-color: #4287f5;
+}
+
+.contact_adres {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.contact_adres_blog_one {
+    background-color: white;
+    height: 208px;
+}
+
+.contact_adres_blog {
+    background-color: white;
+}
+
+.contact_adres_blog_three {
+    background-color: white;
+    height: 208px;
+}
+
+
+.contact_adres_blog_three_btn {
+    display: flex;
+    justify-content: center;
+}
+
+.legislation_blog {
+    background-color: white;
+}
+
+.legislation_blog_text {
+    border: 1px solid;
+    padding: 40px;
+}
+
+.legislation_blog_text h6 {
+    background-color: #4287f5;
+    color: white;
+}
+
+.compensationFund_blog p {
+    font-size: 14px;
+    padding: 30px;
+}
+
+.registrySro_blog_input {
+    /* width: 500px; */
+}
+
+
+/* .compensationFund_start_vajn {
+    margin: -10px;
+} */
+
+
+.compensationFund_blog_vajn{
+    padding: 40px;
+}
