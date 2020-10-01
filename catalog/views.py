@@ -47,6 +47,13 @@ def protocols(request):
         'protocols.html'
     )
 
+def mapSite(request):
+
+    return render(
+        request,
+        'mapSite.html'
+    )
+
 class ReestrView(ListView):
     model = ReestrActive
     template_name = "registrySro.html"

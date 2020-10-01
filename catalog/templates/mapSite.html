@@ -1,0 +1,242 @@
+{% load static %} 
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>ССГС</title>
+</head>
+<body>
+
+  <header>
+    <div class="container-fluid d-flex justify-content-center">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav font-weight-bold ">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                О СОЮЗЕ 
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="../">ГЛАВНАЯ</a>
+                <a class="dropdown-item" href="#">НАПРАВЛЕНИЯ РАБОТЫ</a>
+                <a class="dropdown-item" href="../documentsSro/">ДОКУМЕНТЫ СРО</a>
+                <a class="dropdown-item" href="../compensationFund/">КОМПЕНСАЦИОННЫЙ ФОНД</a>
+                <a class="dropdown-item" href="../ManagementBodies/">ОРГАНЫ УПРАВЛЕНИЯ СОЮЗА</a>
+                
+                
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                ЧЛЕНСТВО СРО
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="../intoSro/">УСЛОВИЯ ВСТУПЛЕНИЯ В СРО</a>
+                <a class="dropdown-item" href="#">ОБРАЗЦЫ ДОКУМЕНТОВ ДЛЯ ВСТУПЛЕНИЯ/ВЫХОДА ИЗ СРО</a>
+                <a class="dropdown-item" href="#">РЕЕСТР ЧЛЕНОВ</a>
+                <a class="dropdown-item" href="#">ИНФОРМАЦИЯ ПО ВЫПИСКАМ</a>
+                <a class="dropdown-item" href="#">ПЛАН ПРОВЕРОК</a>
+                <a class="dropdown-item" href="../termsStrah/">УСЛОВИЯ СТРАХОВАНИЯ</a>
+                
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="../vajnInfo/">ИНФОРМАЦИЯ ОБЯЗАТЕЛЬНАЯ ДЛЯ РАЗМЕЩЕНИЯ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="../legislation/">ЗАКОНОДАТЕЛЬСТВО</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="../indexTwo/">КОНТАКТЫ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="../registrySro/">РЕЕСТР СРО</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="under_head d-flex align-items-center">
+    <div class="container">
+      <div class="under_head_bg">
+        <div class="row d-flex p-0 m-0">
+          <div class="col-md-4 d-flex justify-content-center">
+            <a href="../"><img src="{% static 'img/logo/logo_npsro.png'%}" class="logoImgTwo m-1 p-0" alt=""></a>
+          </div>
+          <div class="col-md-4 d-flex justify-content-center">
+            <div class="under_head_SRO d-flex align-items-center">
+              <h5>СРО-С-048-12102009</h5>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex justify-content-center align-items-center">
+
+            <!-- Modal -->
+            <a href="#" data-target="#exampleModal" data-toggle="modal">
+              <div class=" under_head_new justify-content-center">
+                <p>НОВЫЕ ТРЕБОВАНИЯ К ЧЛЕНСТВУ</p>
+              </div>
+
+              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel"><strong>НОВЫЕ ТРЕБОВАНИЯ К ЧЛЕНСТВУ</strong></h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <h1>Уважаемые коллеги!</h1>
+                      <p>В соответствии с изменениями в Градостроительном кодексе РФ с 1 июля 2017 года одним из требований к члену СРО будет наличие у ИП или юридического лица как минимум двух специалистов по организации инженерных изысканий (главных инженеров проектов), специалистов по организации архитектурно-строительного проектирования (главных инженеров проектов, главных архитекторов проектов), трудовая функция которых включает соответственно организацию выполнения работ по инженерным изысканиям, выполнения работ по подготовке проектной документации, сведения о которых включены в Национальный реестр специалистов.</p>
+                      <p>По всем вопросам обращайтесь с 10:00-18:00 </p>
+                      <p>тел:   +7(911) 003-40-87</p>
+                      <p>тел:   +7(911) 003-41-39</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Modal -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="container">
+      <div class="row justify-content-start mb-4">
+        <div class="col-md-1 mr-1">
+          <a href="../">ГЛАВНАЯ</a>
+        </div>
+        <div class="col-md-0 mr-0 p-0">
+          <p>>>></p>
+        </div>
+        <div class="col-md-5">
+          <p>КАРТА САЙТА</p>
+        </div>
+      </div>
+      <div class="row p-0 m-0">
+        <div class="col-md-12 d-flex justify-content-start">
+          <div class="contact_text">
+            <hr>
+            <h4 class="font-weight-bold">Карта сайта</h4>
+            <hr>
+          </div>
+        </div>
+      </div>
+    </section>
+  <section class="compensationFund mb-5">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-10 p-0 m-0">
+                <div class="compensationFund_start shadow mb-5 bg-white rounded pt-5 pb-5">
+                    <div class="compensationFund_blog d-flex justify-content-center flex-column p-5">
+                        <p class="font-weight-bold pb-1">О СОЮЗЕ</p>
+                        <ul>
+                          <ul>
+                            <li><a href="../">ГЛАВНАЯ</a></li>
+                            <li><a href="../documentsSro/">ДОКУМЕНТЫ СРО</a></li>
+                            <li><a href="../compensationFund/">КОМПЕНСАЦИОННЫЙ ФОНД</a></li>
+                            <li><a href="../ManagementBodies/">ОРГАНЫ УПРАВЛЕНИЯ СОЮЗА</a></li>
+                          </ul>
+                        </ul>
+                        <p class="font-weight-bold pb-1">ЧЛЕНОВ СРО</p>
+                        <ul>
+                          <ul>
+                            <li><a href="../intoSro/">УСЛОВИЯ ВСТУПЛЕНИЯ В СРО</a></li>
+                            <li><a href="../compensationFund/">КОМПЕНСАЦИОННЫЙ ФОНД</a></li>
+                            <li><a href="../termsStrah/">Условия страхования</a></li>
+                          </ul>
+                        </ul>
+                        <p class="font-weight-bold pb-1">ИНФОРМАЦИЯ ОБЯЗАТЕЛЬНАЯ ДЛЯ РАЗМЕЩЕНИЯ</p>
+                        <ul>
+                          <ul>
+                            <li><a href="../vajnInfo/">1)сведения, содержащиеся в реестре членов саморегулируемой организации, в том числе сведения о лицах, прекративших свое членство в саморегулируемой организации, в соответствии с требованиями, установленными статьей 7.1 настоящего Федерального закона;</a></li>
+                            <br>
+                            <li><a href="../vajnInfo/#list-item-2">2)копии в электронной форме стандартов и правил саморегулируемой организации, а также внутренних документов саморегулируемой организации. К внутренним документам саморегулируемой организации относятся:</a></li>
+                            <br>
+                            <li><a href="../vajnInfo/#list-item-3">а) документы, устанавливающие порядок осуществления контроля за соблюдением членами саморегулируемой организации требований стандартов и правил саморегулируемой организации, условий членства в саморегулируемой организации и порядок применения мер дисциплинарного воздействия в отношении членов саморегулируемой организации;</a></li>
+                            <br>
+                            <li><a href="../vajnInfo/#list-item-4">б) положение о раскрытии информации, устанавливающее порядок обеспечения информационной открытости деятельности саморегулируемой организации и деятельности ее членов;</a></li>
+                            <br>
+                            <li><a href="../vajnInfo/#list-item-5">в) порядок размещения средств компенсационного фонда в целях их сохранения и прироста, направления их размещения (инвестиционная декларация) в случае, если формирование компенсационного фонда применяется в качестве способа обеспечения ответственности членов саморегулируемой организации перед потребителями произведенных ими товаров (работ, услуг);</a></li>
+                            <br>
+                            <li><a href="../vajnInfo/#list-item-6">г) требования к членству в саморегулируемой организации, в том числе установленные саморегулируемой организацией размеры вступительных взносов, членских взносов и порядок их уплаты, а также порядок прекращения членства в саморегулируемой организации;</a></li>
+                            <br>
+                            <li><a href="../vajnInfo/#list-item-7">д) иные документы, требования к разработке которых установлены федеральными законами, предусматривающими в соответствии с частью 2 статьи 5 315-ФЗ случаи обязательного членства субъектов предпринимательской или профессиональной деятельности в саморегулируемых организациях</a></li>
+                            <br>
+                            <li><a href="../vajnInfo/#list-item-7">д) иные документы, требования к разработке которых установлены федеральными законами, предусматривающими в соответствии с частью 2 статьи 5 315-ФЗ случаи обязательного членства субъектов предпринимательской или профессиональной деятельности в саморегулируемых организациях</a></li>
+                            <br>
+                            <li><a href="../vajnInfo/#list-item-8">3) информацию о структуре и компетенции органов управления и специализированных органов саморегулируемой организации, количественном и персональном составе постоянно действующего коллегиального органа управления саморегулируемой организации (с указанием штатных должностей членов постоянно действующего коллегиального органа управления саморегулируемой организации, в том числе независимых членов, по основному месту работы), о лице, осуществляющем функции единоличного исполнительного органа саморегулируемой организации, и (или) о персональном составе коллегиального исполнительного органа саморегулируемой организации;</a></li>
+                            <br>
+                            <li><a href="../vajnInfo/#list-item-9">4) Решения, принятые общим собранием членов саморегулируемой организации и постоянно действующим коллегиальным органом управления саморегулируемой организации;</a></li>
+                            <br>
+                            <li><a href="../vajnInfo/#list-item-10">5) информацию об исках и о заявлениях, поданных саморегулируемой организацией в суды;</a></li>
+                            <br>
+                            <li><a href="../vajnInfo/#list-item-11">6) информацию о способах и порядке обеспечения имущественной ответственности членов саморегулируемой организации перед потребителями произведенных ими товаров (работ, услуг) и иными лицами;</a></li>
+                            <br>
+                            <li><a href="../vajnInfo/#list-item-12">7) информацию об управляющей компании, с которой саморегулируемой организацией заключен договор (ее наименование, место нахождения, информацию об имеющейся лицензии, номера контактных телефонов), о специализированном депозитарии, с которым саморегулируемой организацией заключен договор (его наименование, место нахождения, информацию об имеющейся лицензии, номера контактных телефонов), в случае, если формирование компенсационного фонда применяется в качестве способа обеспечения ответственности членов саморегулируемой организации перед потребителями произведенных ими товаров (работ, услуг) и размещение средств компенсационного фонда осуществляется через управляющую компанию;</a></li>
+                            <br>
+                            <li><a href="../vajnInfo/#list-item-13">8) информацию о составе и стоимости имущества компенсационного фонда саморегулируемой организации в случае применения саморегулируемой организацией компенсационного фонда в качестве способа обеспечения имущественной ответственности членов саморегулируемой организации перед потребителями произведенных ими товаров (работ, услуг) и иными лицами, а также информацию о фактах осуществления выплат из компенсационного фонда саморегулируемой организации в целях обеспечения имущественной ответственности членов саморегулируемой организации перед потребителями произведенных ими товаров (работ, услуг) и иными лицами и об основаниях таких выплат, если такие выплаты осуществлялись;</a></li>
+                            <br>
+                            <li><a href="../vajnInfo/#list-item-14">9) информацию о порядке осуществления аттестации членов саморегулируемой организации или их работников в случае, если федеральным законом и (или) саморегулируемой организацией установлено требование о прохождении аттестации членами такой саморегулируемой организации или их работниками;</a></li>
+                            <br>
+                            <li><a href="../vajnInfo/#list-item-15">10) копию в электронной форме плана проверок членов саморегулируемой организации, а также общую информацию о проверках, проведенных в отношении членов саморегулируемой организации за два предшествующих года;</a></li>
+                            <br>
+                            <li><a href="../vajnInfo/#list-item-16">11) годовую бухгалтерскую (финансовую) отчетность саморегулируемой организации и аудиторское заключение в отношении указанной отчетности (при его наличии);</a></li>
+                            <br>
+                            <li><a href="../vajnInfo/#list-item-17">12) полное и (в случае, если имеется) сокращенное наименование саморегулируемой организации, место ее нахождения, номера контактных телефонов и адрес электронной почты, полные и (в случае, если имеются) сокращенные наименования некоммерческих организаций, членом которых является саморегулируемая организация, места их нахождения, номера контактных телефонов и адреса электронной почты;</a></li>
+                            <br>
+                            <li><a href="../vajnInfo/#list-item-18">Наименование, адрес и номера контактных телефонов органа надзора за саморегулируемыми организациями</a></li>
+                            <br>
+                            <li><a href="../vajnInfo/#list-item-19">Информация о кредитной организации, в которой размещены средства компенсационного фонда возмещения вреда и средства компенсационного фонда обеспечения договорных обязательств (в случае формирования такого компенсационного фонда)</a></li>
+                          </ul>
+                        </ul>
+                        <a href="../legislation/"><p class="font-weight-bold pb-1">ЗАКОНОДАТЕЛЬСТВО</p></a>
+                        <a href="../indexTwo/"><p class="font-weight-bold pb-1">КОНТАКТЫ</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+  </div>
+  </section>
+
+  <footer class="under_head d-flex align-items-end m-0">
+    <div class="container">
+      <div class="under_head_bg">
+        <div class="row d-flex p-0 m-4 d-flex justify-content-center">
+          <div class="col-md-12 d-flex justify-content-center">
+            <div class="under_head_SRO d-flex align-items-center p-0 m-0">
+              <h6 class="m-0">Союз строителей
+                «Газораспределительная система.
+                Строительство» © 2016-2020</h6>
+            </div>
+          </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+</body>
+</html>

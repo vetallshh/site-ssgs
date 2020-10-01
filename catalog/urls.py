@@ -14,7 +14,8 @@ urlpatterns = [
     path('intoSro/', views.intoSro, name='intoSro'), 
     path('termsStrah/', views.termsStrah, name='termsStrah'),
     path('vajnInfo/', views.vajnInfo, name='vajnInfo'),
-    path('protocols/', views.protocols, name='protocols'),     
+    path('protocols/', views.protocols, name='protocols'),
+    path('mapSite/', views.mapSite, name='mapSite'),     
 ]
 
 

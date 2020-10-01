@@ -85,6 +85,19 @@ body {
     font-size: 30px;
 }
 
+.logoImg {
+    opacity: 0.9;
+    height: 150px;
+}
+
+.logoImgTwo {
+    height: 150px;
+}
+
+.mapBack {
+    margin-right: 0;
+}
+
 
 /* .blog_two {
     background-color: white; 
@@ -256,7 +269,7 @@ body {
 .under_head {
     background-color: #4287f5;
     background-image: url('../img/b2OrgDark.jpg');
-    height: 115px;
+    /* height: 115px; */
     margin-bottom: 90px;
 }
 
@@ -270,6 +283,7 @@ body {
     padding: 5px;
     border: solid;
     margin-bottom: 5px;
+    color: white;
 }
 
 .under_head_new p {
